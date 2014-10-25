@@ -1,7 +1,7 @@
 <%= form_for(@user, html: {class: "form-horizontal", role: "form"}) do |f| %>
   <% if @user.errors.any? %>
     <div class="alert alert-danger" role="alert">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this from being saved:</h2>
+      <h3><%= pluralize(@user.errors.count, "error") %> prohibited this from being saved:</h3>
 
       <ul>
       <% @user.errors.full_messages.each do |message| %>
