@@ -1,4 +1,5 @@
 <p id="notice"><%= notice %></p>
+<<<<<<< HEAD
 <div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title"><%= @post.title %></h3>
@@ -11,6 +12,17 @@
   Published at
   <%= time_ago_in_words(@post.created_at) %>
 	by
+=======
+
+<p>
+  <strong>Title:</strong>
+  <%= @post.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @post.content %>
+>>>>>>> 473be30ddcd17e4ad69d26185b1e2ed3c093208f
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |

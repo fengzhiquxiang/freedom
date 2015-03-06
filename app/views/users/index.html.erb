@@ -1,11 +1,20 @@
 <h1>Listing users</h1>
 
+<<<<<<< HEAD
 <table>
   <thead>
     <tr>
       <th>Name</th>
       <th>Eamil</th>
       <th colspan="3"></th>
+=======
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th colspan="3">do</th>
+>>>>>>> 473be30ddcd17e4ad69d26185b1e2ed3c093208f
     </tr>
   </thead>
 
@@ -13,7 +22,11 @@
     <% @users.each do |user| %>
       <tr>
         <td><%= user.name %></td>
+<<<<<<< HEAD
         <td><%= user.eamil %></td>
+=======
+        <td><%= user.email %></td>
+>>>>>>> 473be30ddcd17e4ad69d26185b1e2ed3c093208f
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -24,4 +37,8 @@
 
 <br>
 
+<<<<<<< HEAD
 <%= link_to 'New User', new_user_path %>
+=======
+<%= link_to 'Sign up', new_user_path %>
+>>>>>>> 473be30ddcd17e4ad69d26185b1e2ed3c093208f

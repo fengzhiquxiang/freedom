@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+=======
+<%= form_for(@user, html: {class: "form-horizontal", role: "form"}) do |f| %>
+  <% if @user.errors.any? %>
+    <div class="alert alert-danger" role="alert">
+      <h3><%= pluralize(@user.errors.count, "error") %> prohibited this from being saved:</h3>
+>>>>>>> 473be30ddcd17e4ad69d26185b1e2ed3c093208f
 
       <ul>
       <% @user.errors.full_messages.each do |message| %>
@@ -10,6 +17,7 @@
       </ul>
     </div>
   <% end %>
+<<<<<<< HEAD
 
   <div class="field">
     <%= f.label :name %><br>
@@ -23,3 +31,44 @@
     <%= f.submit %>
   </div>
 <% end %>
+=======
+<!-- <div class="alert alert-danger" role="alert">...</div>
+  <div class="form-group has-error">
+  <label class="control-label" for="inputError1">Input with error</label>
+  <input type="text" class="form-control" id="inputError1">
+</div>
+ -->
+  <div class="form-group">
+    <%= f.label :name, "Name", class: "col-sm-3 control-label" %>
+    <div class="col-xs-4">
+      <%= f.text_field :name, class: "form-control input-lg", placeholder: "input your name" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :email, "Email", class: "col-sm-3 control-label" %>
+    <div class="col-xs-4">
+      <%= f.text_field :email, class: "form-control input-lg", placeholder: "input your email" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :password, "Password", class: "col-sm-3 control-label" %>
+    <div class="col-xs-4">
+      <%= f.password_field :password, class: "form-control input-lg", placeholder: "input your password" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :password_confirmation, "Password Confirmation", class: "col-sm-3 control-label" %>
+    <div class="col-xs-4">
+      <%= f.password_field :password_confirmation, class: "form-control input-lg", placeholder: "confirmation your password" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-10">
+      <%= f.submit "Sign up", class: "btn btn-primary btn-lg" %>
+    </div>
+  </div>
+<% end %>
+
+
+  
+>>>>>>> 473be30ddcd17e4ad69d26185b1e2ed3c093208f
