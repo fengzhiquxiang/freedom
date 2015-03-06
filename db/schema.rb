@@ -11,7 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150303084342) do
 
   create_table "posts", force: true do |t|
@@ -20,20 +19,10 @@ ActiveRecord::Schema.define(version: 20150303084342) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
-=======
-ActiveRecord::Schema.define(version: 20141024060517) do
-
-  create_table "posts", force: true do |t|
-    t.string   "title"
-    t.string   "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
->>>>>>> 473be30ddcd17e4ad69d26185b1e2ed3c093208f
   end
 
   create_table "users", force: true do |t|
     t.string   "name"
-<<<<<<< HEAD
     t.string   "eamil"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -52,14 +41,4 @@ ActiveRecord::Schema.define(version: 20141024060517) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
-=======
-    t.string   "password"
-    t.string   "password_digest"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "email"
-    t.string   "password_confirmation"
-  end
-
->>>>>>> 473be30ddcd17e4ad69d26185b1e2ed3c093208f
 end

@@ -1,20 +1,13 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
   devise_for :users
   resources :users
 
   resources :posts
-=======
-  
-  resources :posts
-  resources :users
->>>>>>> 473be30ddcd17e4ad69d26185b1e2ed3c093208f
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-<<<<<<< HEAD
   root 'posts#index'
 
   # Example of regular route:
@@ -25,20 +18,6 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-=======
-  root 'static_pages#welcome'
-
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
-  get 'static_pages/welcome'
-
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
-  # get 'users/signup' => 'users#signup', as: :signup
-
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products  
->>>>>>> 473be30ddcd17e4ad69d26185b1e2ed3c093208f
 
   # Example resource route with options:
   #   resources :products do

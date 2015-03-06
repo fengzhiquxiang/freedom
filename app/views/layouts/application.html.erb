@@ -1,16 +1,11 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html lang="zh-CN">
-=======
-<html>
->>>>>>> 473be30ddcd17e4ad69d26185b1e2ed3c093208f
 <head>
   <title>Mybbs</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<<<<<<< HEAD
 <body class="bg-info">
 <%= render 'layouts/nav1' %>
 
@@ -21,68 +16,5 @@
   <br />
   <br />
 <%= render 'layouts/footer' %>
-=======
-<body>
-
-<div class="container">
-  <div class="row">
-    <div class="span12">
-     <nav class="navbar navbar-default" role="navigation">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <%= link_to "MyBBS",  root_path, class: 'navbar-brand' %>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><%= link_to "帖子",  posts_path, class: "active" %></li>
-            <li><a href="#">Link</a></li>
-          </ul>
-          <form class="navbar-form navbar-right" action="#" role="search">
-            <div class="form-group">
-              <div class="input-group">
-                <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
-                <span class="input-group-btn">
-                  <button type="submit" class="btn"><span class="glyphicon glyphicon-search"></span></button>
-                </span>
-              </div>
-            </div>
-          </form>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">登陆</a></li>
-            <li><%= link_to "Sign up",  new_user_path %></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-      </nav>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="span8">
-      <%= yield %>
-    </div>
-    <div class="span4">
-      <!-- <ul class="list-group">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Morbi leo risus</li>
-        <li class="list-group-item">Porta ac consectetur ac</li>
-        <li class="list-group-item">Vestibulum at eros</li> -->
-      </ul>
-    </div>
-  </div>
-</div>
->>>>>>> 473be30ddcd17e4ad69d26185b1e2ed3c093208f
 </body>
 </html>
