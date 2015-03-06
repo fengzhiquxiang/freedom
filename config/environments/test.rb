@@ -36,10 +36,4 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
-<<<<<<< HEAD
-=======
-
-  #Speed up tests by lowering bcrypt's cost function.
-  ActiveModel::SecurePassword.min_cost = true
->>>>>>> 473be30ddcd17e4ad69d26185b1e2ed3c093208f
 end
