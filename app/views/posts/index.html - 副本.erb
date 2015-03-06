@@ -1,0 +1,24 @@
+<h1>Listing posts</h1>
+    <% @posts.each do |post| %>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            <%= post.title %>
+            <p class="date">
+              Published at<%= time_ago_in_words(post.created_at) %> by <%= post.user.name %>
+            </p>
+          </h3>
+        </div>
+        <div class="panel-body">
+          <%= post.text %>
+        </div>
+        <span class="label label-info"><%= link_to 'Show', post %></span>
+        <span class="label label-info"><%= link_to 'Edit', edit_post_path(post) %></span>
+        <span class="label label-info"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+      </div>
+        
+  <% end %>
+
+<br>
+
+<%= link_to 'New Post', new_post_path %>
