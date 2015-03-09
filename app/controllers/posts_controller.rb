@@ -1,7 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-
-  # GET /posts
+  before_action :authenticate_user!, only: [:edit, :update, :destroy]
   # GET /posts.json
   def index
     @posts = Post.all
@@ -42,7 +41,9 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1.json
   def update
     respond_to do |format|
-      if @post.update(post_params)
+      if current_user != @post.user
+        format.html { redirect_to root_path, notice: 'Post is not yours!!!!' }
+      elsif @post.update(post_params)
         format.html { redirect_to @post, notice: 'Post was successfully updated.' }
         format.json { render :show, status: :ok, location: @post }
       else
