@@ -28,11 +28,9 @@ gem 'devise'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-group :development do
-  gem 'rails_layout'
+group :test, :development do
+  gem 'rspec-rails', '~> 3.0.0'
 end
-
-
 # Use unicorn as the app server
 # gem 'unicorn'
 
